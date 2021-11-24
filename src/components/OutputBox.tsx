@@ -7,10 +7,10 @@ interface Props {
 
 const OutputBox: React.FC<Props> = ({ output }) => {
   return (
-    <div className="box-container">
+    <div className="box-container" data-testid="output-box">
       <h3>Output</h3>
       <p>Double</p>
-      <input type="text" value={output} readOnly />
+      <input data-testid="output-element" type="text" value={output} readOnly />
     </div>
   )
 }
